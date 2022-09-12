@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web-101 C2</title>
+    <style>
+      .top
+      {
+        
+        display: flex;
+        gap: 3%;
+        margin: auto;
+        margin-top:2%;
+        margin-bottom: 0%;
+        height: 20%;
+        
+      }
+      .top>div:first-child
+      {
+        
+        width: 40%;
+        padding: 0px 20px;
+        font-size: 15px;
+        margin-bottom: 5px;
+        height: 50%;
+      }
+      
+      .top>div>img
+      {
+        height: 50%;
+        align-items: center;
+        padding: 30px;
+        
+      }
+
+      .mid
+      {
+        
+        
+        margin-top: 0px;
+        margin: auto;
+
+      }
+      .mid>div:first-child
+      {
+        text-align: center;
+        
+      }
+      
+      #mid-images img
+      {
+        height: 20px;
+      }
+      .bottom>div:first-child
+      {
+        text-align: center;
+        margin-top: 10px;
+      }
+      .bottom>div:nth-child(2)
+      {
+        display: flex;
+      }
+      #bottom-images img
+      {
+        width:200px;
+        height:200px;
+      }
+      #bottom-images
+      {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 5px 5px;
+        gap:10px 10px
+      }
+      #bottom-images h1
+      {
+        font-size: 20px;
+      }
+      
+      @media all and (max-width: 1100px) and (min-width:601px) {
+       /* Medium Screen Styles  */
+       .top
+       {
+        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+      @media all and (max-width: 601px) and (min-width:200px) {
+        /* Small Screen Styles  */
+        #bottom-images
+        {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <!-- Two Divs should be inside here  -->
+      <div>
+        <h1>Sobre a Platform de GestoMarket UP </h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta ipsa ex laudantium aspernatur harum modi 
+          veritatis dolores omnis vero at. 
+          Velit esse autem possimus dignissimos, quos a sunt maiores labore.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta ipsa ex laudantium aspernatur harum modi 
+          veritatis dolores omnis vero at. 
+          Velit esse autem possimus dignissimos, quos a sunt maiores labore.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta ipsa ex laudantium aspernatur harum modi 
+          veritatis dolores omnis vero at. 
+          Velit esse autem possimus dignissimos, quos a sunt maiores labore.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta ipsa ex laudantium aspernatur harum modi 
+          veritatis dolores omnis vero at. 
+          Velit esse autem possimus dignissimos, quos a sunt maiores labore.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta ipsa ex laudantium aspernatur harum modi 
+          veritatis dolores omnis vero at. 
+          Velit esse autem possimus dignissimos, quos a sunt maiores labore.</p>
+      </div>
+      <div><img src="https://marketup.com/wp-content/uploads/2022/06/Home-Mock.png" alt=""/></div>
+    </div>
+    <div class="mid">
+      <!-- Two Divs should be inside here and on the second div you have to put 8 caards  -->
+      <div>
+        <h2>Recursos Relacionados</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit eos numquam fuga modi.
+           Aspernatur repudiandae alias aliquid rem nobis neque saepe quasi minus.</p>
+      </div>
+      <div id="mid-images">
+        <div>
+          <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-09-08/Screenshot%202022-09-06%20at%2012.13.44%20PM_859545.png" alt=""/>
+        </div>
+        <div>
+          <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-09-08/Screenshot%202022-09-06%20at%2012.13.44%20PM_859545.png" alt=""/>
+        </div>
+        <div>
+          <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-09-08/Screenshot%202022-09-06%20at%2012.13.44%20PM_859545.png" alt=""/>
+        </div>
+        <div>
+          <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-09-08/Screenshot%202022-09-06%20at%2012.13.44%20PM_859545.png" alt=""/>
+        </div>
+        <div>
+          <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-09-08/Screenshot%202022-09-06%20at%2012.13.44%20PM_859545.png" alt=""/>
+        </div>
+        <div>
+          <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-09-08/Screenshot%202022-09-06%20at%2012.13.44%20PM_859545.png" alt=""/>
+        </div>
+        <div>
+          <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-09-08/Screenshot%202022-09-06%20at%2012.13.44%20PM_859545.png" alt=""/>
+        </div>
+        <div>
+          <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-09-08/Screenshot%202022-09-06%20at%2012.13.44%20PM_859545.png" alt=""/>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <!-- Two Divs should be inside here and on the second div you have to put 4 caards  -->
+      <div>
+        <h2>Lorem ipsum dolor sit </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ea natus pariatur at tempora iste
+           quisquam suscipit repudiandae eos necessitatibus ut ad sapiente, nostrum inventore reprehenderit!
+            Nihil illum illo temporibus?</p>
+      </div>
+      <div id="bottom-images">
+        <div>
+          <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-09-08/Screenshot%202022-09-06%20at%2012.13.44%20PM_859545.png" alt="" />
+          <h1>some heading!!</h1>
+          <button>button</button>
+        </div>
+        <div>
+          <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-09-08/Screenshot%202022-09-06%20at%2012.13.44%20PM_859545.png" alt="" />
+          <h1>some heading!!</h1>
+          <button>button</button>
+        </div>
+        <div>
+          <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-09-08/Screenshot%202022-09-06%20at%2012.13.44%20PM_859545.png" alt="" />
+          <h1>some heading!!</h1>
+          <button>button</button>
+        </div>
+        <div>
+          <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-09-08/Screenshot%202022-09-06%20at%2012.13.44%20PM_859545.png" alt="" />
+          <h1>some heading!!</h1>
+          <button>button</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
